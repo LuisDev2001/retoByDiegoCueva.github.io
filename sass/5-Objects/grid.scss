@@ -1,0 +1,15 @@
+@import "../2-Tools/mixins.scss";
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+
+  @include tabletV {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}

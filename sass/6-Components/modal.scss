@@ -1,0 +1,99 @@
+@import "../1-Settings/settings.scss";
+
+.popup-modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out all;
+
+  &-content {
+    background: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 0;
+    transition: 0.3s ease-in-out all;
+    @include tabletV {
+      width: 50%;
+    }
+
+    @include desktop {
+      width: 40rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+  //Clase para desaparecer el modal
+  &.disappear,
+  &-content.disappear {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &-follow {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    a {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+
+      i {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &-close {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+.title-follow {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.facebook {
+  color: var(--color-facebook);
+}
+.instagram {
+  color: var(--color-instagram);
+}
+.twitter {
+  color: var(--color-twitter);
+}
+.github {
+  color: var(--color-github);
+}

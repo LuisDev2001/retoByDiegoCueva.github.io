@@ -1,0 +1,40 @@
+.card-product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--color-primary);
+  padding: 1rem;
+
+  &-image {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  &-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    span {
+      font-family: var(--fuenteHelvetica);
+      font-size: 0.9rem;
+
+      b {
+        font-family: var(--fuenteArial);
+      }
+    }
+  }
+}

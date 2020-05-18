@@ -1,0 +1,49 @@
+:root {
+  --color-primary: #f2f2f2;
+  --color-secondary: #ffffff;
+  --color-black: #222222;
+  --fuenteArial: Arial;
+  --fuenteHelvetica: Helvetica;
+  --color-facebook: #253ead;
+  --color-instagram: #e6683c;
+  --color-twitter: #2d7ffa;
+  --color-github: #4b4b4b;
+}
+
+.bread-crumbs {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bread-crumbs .wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.bread-crumbs-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bread-crumbs-list {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bread-crumbs-link {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bread-crumbs-link.active {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=breadcump.css.map */

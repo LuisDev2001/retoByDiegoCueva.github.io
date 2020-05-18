@@ -1,0 +1,42 @@
+@import "../1-Settings/settings.scss";
+
+.bread-crumbs {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  &-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-list {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-link {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-link.active {
+    font-weight: bold;
+  }
+}

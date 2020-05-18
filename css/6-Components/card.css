@@ -1,0 +1,37 @@
+.card-product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--color-primary);
+  padding: 1rem;
+}
+.card-product-image {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-product-image img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card-product-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.card-product-info span {
+  font-family: var(--fuenteHelvetica);
+  font-size: 0.9rem;
+}
+.card-product-info span b {
+  font-family: var(--fuenteArial);
+}
+
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,15 @@
+@import "../2-Tools/mixins.scss";
+
+.wrapper {
+  max-width: 25rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+
+  @include tabletV {
+    max-width: 45rem;
+  }
+
+  @include desktop {
+    max-width: 75rem;
+  }
+}
